@@ -111,6 +111,7 @@ genesis-op-return-script = 5b6e6f74207365745d # Genesis block coinbase OP_RETURN
 genesis-hash = 0000d412c28c27570d2441316c80c7cdb8af25030c9ba8e13f9cb5f2e818da86 # Genesis block hash.
 chain-params-hash = ca652eb7df52f6e8358ed8572f68f235f41bba6caf8fd4b6334405e39c177450 # Hash of blockchain parameters, to prevent accidental changes.
 " > /root/.mercante/mercante/params.dat
+chmod 755 /usr/local/bin/mercante*
 mercanted mercante@209.97.138.252:8666 -daemon
 echo 'For interactive mode 
 
@@ -122,7 +123,6 @@ mercante-cli mercante stop
 Have fun. 
 il M3rc4nt3
 '
-chmod 755 /usr/local/bin/mercante*
 cd ..
 rm -r mercante1.0b
 exit
